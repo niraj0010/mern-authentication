@@ -32,5 +32,5 @@ const validateUser = (data) => {
 
 module.exports = {
     User,
-    validateUser  // Make sure validateUser is correctly exported
+    validateUser  
 };
