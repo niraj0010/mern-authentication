@@ -8,7 +8,8 @@ const userSchema = new mongoose.Schema({
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     email: { type: String, required: true },
-    password: { type: String, required: true }
+    password: { type: String, required: true },
+    verified: {type:Boolean, default:false},
 });
 
 // Method to generate JWT token
@@ -32,5 +33,5 @@ const validateUser = (data) => {
 
 module.exports = {
     User,
-    validateUser  // Make sure validateUser is correctly exported
+    validateUser  
 };
